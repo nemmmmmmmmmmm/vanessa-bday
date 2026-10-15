@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f0e9"><meta name="description" content="A little birthday surprise for Caa.">
+<title>A Little Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+<section id="countdownPage" class="page countdown-page">
+  <div class="countdown-card">
+    <div class="eyebrow"><span class="tiny-star">✦</span> A LITTLE SOMETHING<span class="tiny-star">✦</span></div>
+    <h1>Something special<br><em>awaits you.</em></h1>
+    <p class="subline">A little moment, made just for you.</p>
+    <div class="timer" aria-label="Countdown">
+      <div><strong id="days">00</strong><span>DAYS</span></div><i>:</i>
+      <div><strong id="hours">00</strong><span>HOURS</span></div><i>:</i>
+      <div><strong id="minutes">00</strong><span>MINUTES</span></div><i>:</i>
+      <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+    </div>
+    <div class="countdown-foot"><span class="line"></span><span>OCTOBER 16, 2026</span><span class="line"></span></div>
+    <button id="previewButton" class="pill-button preview-button hidden" type="button">Preview birthday experience <span>↗</span></button>
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  </div>
+  <div class="bottom-note">made with Nem_ <span></span></div>
+</section>
+
+<main id="galleryPage" class="page gallery-page hidden">
+  <header class="gallery-intro reveal">
+    <p class="eyebrow">OCTOBER 16 <span class="tiny-star">✦</span> YOUR DAY</p>
+    <h1>Happy Birthday,<br><em>Caaa.</em></h1>
+    <p class="subline">A few little moments worth keeping.</p>
+    <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+  </header>
+  <section class="photo-grid" id="photoGrid" aria-label="Photo gallery"></section>
+  <div class="gallery-end reveal">
+    <span class="little-flower">✿</span>
+    <p>And now, one little thing more…</p>
+    <button id="toEnvelope" class="pill-button">A little letter for you <span></span></button>
+  </div>
+</main>
+
+<section id="letterPage" class="page letter-page hidden">
+  <div class="letter-heading reveal"><p class="eyebrow">JUST FOR YOU</p><h2>A little letter,<br><em>from me to you.</em></h2><p class="subline">Tap the envelope to open it.</p></div>
+  <div class="envelope-scene" id="envelopeScene">
+    <div class="letter-paper" id="letterPaper">
+      <div class="paper-inner">
+        <div class="letter-sparkle">✦</div>
+        <p class="script-title">Happy Birthday, Caaa </p>
+        <div class="letter-copy">
+          <p>Wishing you a year filled with little joys, beautiful surprises, and all the things that make you smile.</p>
+          <p>I hope life brings you more reasons to laugh, people who make you feel loved, and moments that remind you how special you are.</p>
+          <p>Have the loveliest birthday, Caa. You deserve a beautiful year ahead. ♡</p>
+        </div>
+        <p class="letter-signoff">Have a beautiful day <span>♡</span></p>
+      </div>
+    </div>
+    <button id="envelopeButton" class="envelope-button" aria-label="Open birthday letter">
+      <div class="envelope-back"></div><div class="envelope-flap"></div><div class="envelope-front"></div>
+      <div class="wax-seal">♡</div>
+      <span class="envelope-hint">OPEN ME</span>
+    </button>
+  </div>
+  <p id="tapHint" class="tap-hint">tap the envelope</p>
+  <button id="finishButton" class="pill-button finish-button hidden">Close this little gift <span>♡</span></button>
+</section>
+
+<section id="goodbyePage" class="page goodbye-page hidden">
+  <div class="goodbye-content reveal"><div class="goodbye-star">✦</div><p class="eyebrow">A LITTLE WISH FOR YOU</p><h1>Thank you<br><em>for being here.</em></h1><p class="subline">I hope this little surprise made you smile.<br>Have a beautiful birthday, Caaa. hehehe</p><div class="goodbye-flower">❀</div></div>
+</section>
+
+<div class="music-control" id="musicControl"><button id="musicButton" aria-label="Play music" title="Play music">♫</button><span id="musicLabel">music</span></div>
+<audio id="bgMusic" loop preload="none"><source src="assets/song.mp3" type="audio/mpeg"></audio>
+<script src="script.js"></script>
+</body></html>
